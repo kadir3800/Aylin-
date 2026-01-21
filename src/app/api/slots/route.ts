@@ -7,12 +7,16 @@ export async function GET() {
 
     return new Response(JSON.stringify(slots), {
       status: 200,
-      headers: { "Content-Type": "application/json" },
+      headers: { 
+        "Content-Type": "application/json" 
+      },
     });
   } catch (error) {
     return new Response(JSON.stringify({ error: "Hata oluştu" }), {
       status: 500,
-      headers: { "Content-Type": "application/json" },
+      headers: { 
+        "Content-Type": "application/json" 
+      },
     });
   }
 }
